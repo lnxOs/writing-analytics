@@ -1,6 +1,6 @@
 import numpy as np
 from collections import defaultdict
-from gdrive_interface import grab_soc_files, download_plaintext
+from gdriveinterface import grab_soc_files, download_plaintext
 import visualization
 
 def wordcount(passages):

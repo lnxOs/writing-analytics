@@ -87,7 +87,9 @@ def download_plaintext(f_id):
     done = False
     while done is False:
         status, done = downloader.next_chunk()
-    return fh.getvalue()[1:]
+    text = fh.getvalue()[1:]
+    fh.close()
+    return text
 
 if __name__ == '__main__':
     files = grab_soc_files()
